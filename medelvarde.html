@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+  <title> Beräkna medelvärde</title>
+
+</head>
+
+<body>
+
+  <script>
+    /*beräkna medelvärde
+    x = x + 1 <==> x++
+   x = x + y <==> x+=y
+    */
+  
+    var allResults = new Array();
+    allResults[0] = 4.5;
+    allResults[1] = 4.5;
+    allResults[2] = 18.5;
+    allResults[3] = 12.5;
+    allResults[4] = 5.5;
+    allResults[5] = 20;
+    allResults[6] = 5;
+    allResults[7] = 6.5;
+    allResults[8] = 6;
+    allResults[9] = 2;
+    allResults[10] = 10;
+    allResults[11] = 9;
+    allResults[12] = 6;
+    allResults[13] = 8;
+    allResults[14] = 8;
+    allResults[15] = 14.5;
+    allResults[16] = 4;
+    allResults[17] = 4.5;
+    allResults[18] = 4;
+    allResults[19] = 10;
+    allResults[20] = 12;
+    allResults[21] = 6;
+    allResults[22] = 15.5;
+    allResults[23] = 11;
+    allResults[24] = 4;
+    allResults[25] = 5;
+
+    var sum = 0;
+
+	//summerar alla värden i arrayen
+    for(var i=0; i<26; i++){
+		       sum += allResults [i];
+		       }
+
+		       var average = sum /26;
+
+		       alert("Medelvärdet på prov 1 i javascript blev "+avarage+"/20");
+
+
+
+  </script>
+
+
+</body>
+</html>

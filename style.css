@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*högst upp på sidan*/
+
+#header {
+    height:60px;
+    background-image:url(bilder/bildoliv.png); 
+    margin:auto;
+    width:1000px; 
+    border-radius:20px 20px 0px 0px;
+}
+
+/*En div för listan på sidan för HTML-CSS koppling*/
+
+#listan {
+    margin-left: 40px;
+}
+
+
+/*bild egenskaper*/
+
+img {
+    float:right;
+    margin-right:25px;
+
+}
+
+
+/*Bildspelet*/
+
+.slideshow { 
+    height: 232px; 
+    width: 232px; 
+    margin: auto; 
+    position:relative;
+    right:340px;
+}
+
+.slideshow img { 
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    background-color: #eee; 
+}
+
+
+/*binder ihop sidan, färg, osv*/
+
+#wrapper { 
+    width:1000px; 
+    margin:auto;
+    padding:0px; 
+    background-color:#690; 
+    height:600px; 
+    border-radius:20px 20px 0px 0px; 
+}
+
+
+/*visas längst ner på sidan*/
+
+#footer {
+    background-color:#360;
+}
+
+
+/*innehållet i artikeln*/
+
+#content {
+    height:490px;
+    overflow:auto;
+    width:1000px;
+}
+
+
+/*bakgrund på sidan*/
+
+body {
+    background-image:url(bilder/green2.png)
+}
+
+/*texten högst upp på sidan*/
+
+h1 {
+     margin-left:10px;
+     color:white;
+     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*Inledning vid ny sida*/
+
+h3 {
+    margin-left:20px;
+    padding-top:5px;
+}
+
+
+/*egenskaperna för paragraferna*/
+
+p {
+    margin-left:20px;
+}
+
+
+
+/* Navigering */
+#nav {
+    position:relative;
+    width:1000px;
+    margin:0 auto; 
+    margin-top:0px;
+    padding:10px;
+}
+ 
+ul#navigation {
+    margin:0px auto;
+    position:relative;
+    float:left;
+    border-left:2px solid #090;
+    border-right:2px solid #090;
+}
+ 
+ul#navigation li {
+    display:inline;
+    font-size:12px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    float:left;
+    position:relative;
+    border-top:1px solid #090;
+    border-bottom:2px solid #090;
+}
+ 
+ul#navigation li a {
+    padding:10px 25px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border-right:1px solid #090;
+    border-left:1px solid #090;
+    border-top:1px solid #090;
+    background: #3F0;
+     
+    -webkit-transition:color 0.2s linear, background 0.2s linear;   
+    -moz-transition:color 0.2s linear, background 0.2s linear;  
+    -o-transition:color 0.2s linear, background 0.2s linear;    
+    transition:color 0.2s linear, background 0.2s linear;   
+}
+ 
+ul#navigation li a:hover {
+    background:#f8f8f8;
+    color:#282828;
+}
+ 
+ul#navigation li a.first {
+    border-left: 0 none;
+}
+ 
+ul#navigation li a.last {
+    border-right: 0 none;
+}
+ 
+ul#navigation li:hover > a {
+    background:#fff;
+}
+
+/* Navigering drop-down */
+ul#navigation li:hover > ul
+{
+/*these 2 styles are very important, 
+being the ones which make the drop-down to appear on hover */
+    visibility:visible;
+    opacity:1;
+}
+ 
+ul#navigation ul, ul#navigation ul li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+/*the next 2 styles are very important, 
+being the ones which make the drop-down to stay hidden */
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    z-index: 99999;
+    width:180px;
+    background:#f8f8f8;
+    box-shadow:1px 1px 3px #ccc;
+/* css3 transitions for smooth hover effect */
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear; 
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear; 
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear; 
+    transition:opacity 0.2s linear, visibility 0.2s linear;     
+}
+ 
+ul#navigation ul {
+    top: 43px;
+    left: 1px;
+}
+ 
+ul#navigation ul li ul {
+    top: 0;
+    left: 181px; /* strong related to width:180px; from above */
+}
+ 
+ul#navigation ul li {
+    clear:both;
+    width:100%;
+    border:0 none;
+    border-bottom:1px solid #c9c9c9;
+}
+ 
+ul#navigation ul li a {
+    background:none;
+    padding:7px 15px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border:0 none;
+    float:left;
+    clear:both;
+    width:150px;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}

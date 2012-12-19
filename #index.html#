@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Webbprojekt</title>
+    <meta name="description" content="">
+    <!-- link href="reset.css" rel="stylesheet" type="text/css" / -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="bilder/favicon.ico" />
+
+  </head>
+
+  <body>
+	
+    <div id="wrapper">
+      <div id="header">
+	<h1>Webbprojekt</h1>
+      </div>
+ 
+      <nav id="nav">
+    	<ul id="navigation">
+          <li><a href="#" class="first">Startsidan</a></li>
+          <li><a href="#">Länkar &raquo;</a>
+            <ul>
+              <li><a href="webben.html">Webbens Historia</a></li>
+              <li><a href="urlhttp.html">HTTP och URL</a></li>
+              <li><a href="#">Grunden för kodning &raquo;</a>
+                <ul>
+                  <li><a href="html.html">I html</a></li>
+                  <li><a href="scc.html">I CSS</a></li>
+                  <li><a href="html_scc.html">I CCS-HTML koppling</a></li>
+                </ul>               
+              </li>                 
+            </ul>
+          </li>
+        </ul>	 
+      </nav>
+      
+      <div id="content">
+      
+      
+	<h3>Startsidan</h3>
+	<p>
+
+	  <img src="bilder/bildoliv2.png"/>
+
+
+	  Hej! Denna sida är till för att lära dig
+	  grunderna till HTML och CSS, och hur man kopplar ihop
+	  de två språken till att skapa en websida. Jag kommer även berätta lite
+	  om webben ur ett historiskt perspektiv, hur internet kom till,
+	  och hur det har påverkat samhället.
+
+	  
+
+	</p>
+
+
+
+
+      </div>
+      
+      
+      <div id="footer">
+	&copy; Gabriel Törnkvist 2012 | Bilderna är tillåtna att användas enligt; 1960:729, 2§
+      </div>
+    </div>
+    
+    
+    
+  </body>
+  
+</html>
+ 
